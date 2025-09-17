@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Wed Sep 17 2025 18:57:48
+#sha1: 8a38aa
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='wifi-10-30-9-133.wifi.univ-paris5.fr', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+15518,design,log,
+#design: #exp: Circle
+#design: block_cnt,block_id,trial_cnt,trial_id
+15518,design,logged,
+15518,Experiment,started
+15527,Stimulus,presented,1
+15542,Stimulus,presented,0
+17544,Keyboard,received,32,wait
+17544,Experiment,ended
+17560,Stimulus,presented,2
