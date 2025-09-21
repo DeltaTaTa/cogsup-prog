@@ -33,7 +33,7 @@ shape_size = (50, 50)
 # Red starts 500 px left of center
 square_left = stimuli.Rectangle(colour=color_red, 
                                 size=shape_size, 
-                                position=(-500, 0))
+                                position=(-400, 0))
 
 # Green starts at the center
 square_right = stimuli.Rectangle(colour=color_green, 
@@ -43,14 +43,9 @@ square_right = stimuli.Rectangle(colour=color_green,
 # Start experiment
 control.start(subject_id=1)
 
-"""
-# Show initial display for 1 second
-square_left.present(clear=True, update=False)
-square_right.present(clear=False, update=True)
+# Set presentation duration
 exp.clock.wait(1000)
 
-"""
-exp.clock.wait(1000)
 # Distance to travel = Initial distance between objects
 displacement_x = 400
 
@@ -59,7 +54,7 @@ step_size = 10 # pixels per update
 
 
 # Move left square until collision
-while square_left.position[0] - square_right.position[0] < 50:
+while square_right.position[0] - square_left.position[0] > 50:
     square_left.move((step_size, 0)) # (move-x, move-y)
     square_left.present(clear = True, update = False)
     square_right.present(clear = False, update = True)
