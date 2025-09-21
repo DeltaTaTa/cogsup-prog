@@ -1,0 +1,49 @@
+from expyriment import design, control, stimuli
+
+# Create an Experiment object
+exp = design.Experiment(name="launching")
+control.initialize(exp)
+
+# Define colours and size
+color_red = (255, 0, 0)
+color_green = (0, 255, 0)
+shape_size = (50, 50)
+
+# Create squares
+# Red starts 500 px left of center
+square_left = stimuli.Rectangle(colour=color_red, 
+                                size=shape_size, 
+                                position=(-400, 0))
+
+# Green starts at the center
+square_right = stimuli.Rectangle(colour=color_green, 
+                                 size=shape_size, 
+                                 position=(0, 0))
+
+# Start experiment
+control.start(subject_id=1)
+
+# Distance to travel = Initial distance between objects
+displacement_x = 400
+
+# Set speed
+step_size = 10 # pixels per update
+
+# Define the spatial gap
+spatial_gap = 50
+
+# Move left square until collision
+while square_right.position[0] - square_left.position[0] > 50 + spatial_gap:
+    square_left.move((step_size, 0)) # (move-x, move-y)
+    square_left.present(clear = True, update = False)
+    square_right.present(clear = False, update = True)
+
+# Delay no more
+# exp.clock.wait(2000)
+
+# Move right square after collision
+while square_right.position[0] < displacement_x:
+    square_right.move((step_size, 0))
+    square_right.present(clear = True, update = False)
+    square_left.present(clear = False, update = True)
+    
