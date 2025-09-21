@@ -1,0 +1,15 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Sep 21 2025 23:10:25
+#sha1: 03067d
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+12718,design,log,
+#design: #exp: launching
+#design: block_cnt,block_id,trial_cnt,trial_id
+12718,design,logged,
+12718,Experiment,started
+13719,stderr,received,'Traceback (most recent call last):'
+13719,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-2/Exercises/launching.py", line 61, in <module>\n    while square_left.position[0] - square_right.position[0] < square_length:\n                                                               ^^^^^^^^^^^^^'
+13719,stderr,received,"NameError: name 'square_length' is not defined. Did you mean: 'square_left'?"
