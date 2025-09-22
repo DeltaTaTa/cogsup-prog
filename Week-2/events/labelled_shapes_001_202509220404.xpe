@@ -1,0 +1,16 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Sep 22 2025 04:04:18
+#sha1: 888866
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+42032,design,log,
+#design: #exp: labelled_shapes
+#design: block_cnt,block_id,trial_cnt,trial_id
+42032,design,logged,
+42032,Experiment,started
+42034,Stimulus,presented,0
+42036,stderr,received,'Traceback (most recent call last):'
+42036,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-2/Exercises/labelled_shapes.py", line 40, in <module>\n    square_right.present(clear = False, update = True)\n    ^^^^^^^^^^^^'
+42036,stderr,received,"NameError: name 'square_right' is not defined"
