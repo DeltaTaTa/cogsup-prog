@@ -1,5 +1,9 @@
 from expyriment import stimuli, design, control
 
+# Set the development mode
+control.set_develop_mode(True)
+
+
 exp = design.Experiment()
 
 control.initialize(exp)

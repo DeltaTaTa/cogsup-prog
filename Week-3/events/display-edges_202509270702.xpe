@@ -1,0 +1,10 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sat Sep 27 2025 07:02:32
+#sha1: 71b0bb
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+4364,stderr,received,'Traceback (most recent call last):'
+4365,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/Exercises/display-edges.py", line 7, in <module>\n    set_develop_mode()\n    ^^^^^^^^^^^^^^^^'
+4365,stderr,received,"NameError: name 'set_develop_mode' is not defined"
