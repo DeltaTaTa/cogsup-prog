@@ -1,0 +1,24 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sat Sep 27 2025 07:36:56
+#sha1: b1c894
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+19086,design,log,
+#design: #exp: kanizsa-square
+#design: block_cnt,block_id,trial_cnt,trial_id
+19086,design,logged,
+19086,Experiment,started
+19087,Stimulus,presented,1
+19087,Stimulus,presented,2
+19088,Stimulus,presented,3
+19088,Stimulus,presented,4
+19104,Stimulus,presented,0
+19927,Keyboard,received,32,wait
+19927,Experiment,ended
+19927,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x105aeed40>'
+19927,stderr,received,'Traceback (most recent call last):'
+19927,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/.venv/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+19927,stderr,received,'    if self._compression_filename is not None:'
+19927,stderr,received,"AttributeError: 'TextLine' object has no attribute '_compression_filename'"

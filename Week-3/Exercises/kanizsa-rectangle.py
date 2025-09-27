@@ -10,17 +10,15 @@ control.initialise(exp)
 # Get the monitor's spec
 width, height = exp.screen.size
 
-# Calculate the squares' length
-square_length = round(0.25 * width, 0)
-vertex_abs = square_length // 2
-
 # Calculate the circle's radius
 circle_radius = round(0.05 * width, 0)
+
+square_size = (800, 600)
 
 # Create the square
 square = stimuli.Rectangle(
     size = (square_length, square_length),
-    position = (0, 0),
+    position = square_size,
     colour = (128, 128, 128)
 )
 
