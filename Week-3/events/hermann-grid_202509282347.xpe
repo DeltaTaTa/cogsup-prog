@@ -1,0 +1,17 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Sep 28 2025 23:47:37
+#sha1: d485ad
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+521,stdout,received,'[-82.5, -27.5, 27.5, 82.5]'
+521,stdout,received,'[-55.0, 0.0, 55.0]'
+521,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x104fced40>'
+521,stderr,received,'Traceback (most recent call last):'
+521,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/.venv/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+521,stderr,received,'    if self._compression_filename is not None:'
+521,stderr,received,"AttributeError: 'Rectangle' object has no attribute '_compression_filename'"
+521,stderr,received,'Traceback (most recent call last):'
+521,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/Exercises/hermann-grid.py", line 65, in <module>\n    square = stimuli.Rectangle(\n        size = size,\n        color = square_color\n    )'
+521,stderr,received,"TypeError: Rectangle.__init__() got an unexpected keyword argument 'color'. Did you mean 'colour'?"

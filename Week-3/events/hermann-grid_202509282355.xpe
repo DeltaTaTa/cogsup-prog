@@ -1,0 +1,32 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Sep 28 2025 23:55:43
+#sha1: d6ea3e
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+4519,stdout,received,'[-757.5, -252.5, 252.5, 757.5]'
+4519,stdout,received,'[-505.0, 0.0, 505.0]'
+4520,Stimulus,presented,0
+4522,Stimulus,presented,0
+4523,Stimulus,presented,0
+4524,Stimulus,presented,0
+4525,Stimulus,presented,0
+4525,Stimulus,presented,0
+4526,Stimulus,presented,0
+4527,Stimulus,presented,0
+4528,Stimulus,presented,0
+4529,Stimulus,presented,0
+4530,Stimulus,presented,0
+4530,Stimulus,presented,0
+22990,Experiment,paused
+23025,Stimulus,presented,1
+149830,Keyboard,received,n,wait_char
+149831,Experiment,resumed
+149831,Keyboard,received,None,wait
+149831,Experiment,ended
+149831,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x1040bed40>'
+149831,stderr,received,'Traceback (most recent call last):'
+149831,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/.venv/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+149832,stderr,received,'    if self._compression_filename is not None:'
+149832,stderr,received,"AttributeError: 'TextLine' object has no attribute '_compression_filename'"

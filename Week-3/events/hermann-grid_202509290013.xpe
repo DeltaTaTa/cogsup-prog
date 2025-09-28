@@ -1,0 +1,214 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Sep 29 2025 00:13:36
+#sha1: 5c664f
+#modules: 
+#display: size=(800, 600), window_mode=False, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+4433,stdout,received,'[-270.0, -210.0, -150.0, -90.0, -30.0, 30.0, 90.0, 150.0, 210.0, 270.0]'
+4433,stdout,received,'[-270.0, -210.0, -150.0, -90.0, -30.0, 30.0, 90.0, 150.0, 210.0, 270.0]'
+4433,stdout,received,'(-270.0, -270.0)'
+4434,Stimulus,presented,0
+4434,stdout,received,'(-270.0, -210.0)'
+4435,Stimulus,presented,0
+4435,stdout,received,'(-270.0, -150.0)'
+4435,Stimulus,presented,0
+4435,stdout,received,'(-270.0, -90.0)'
+4436,Stimulus,presented,0
+4436,stdout,received,'(-270.0, -30.0)'
+4436,Stimulus,presented,0
+4437,stdout,received,'(-270.0, 30.0)'
+4437,Stimulus,presented,0
+4437,stdout,received,'(-270.0, 90.0)'
+4438,Stimulus,presented,0
+4438,stdout,received,'(-270.0, 150.0)'
+4438,Stimulus,presented,0
+4438,stdout,received,'(-270.0, 210.0)'
+4438,Stimulus,presented,0
+4438,stdout,received,'(-270.0, 270.0)'
+4439,Stimulus,presented,0
+4439,stdout,received,'(-210.0, -270.0)'
+4439,Stimulus,presented,0
+4439,stdout,received,'(-210.0, -210.0)'
+4440,Stimulus,presented,0
+4440,stdout,received,'(-210.0, -150.0)'
+4440,Stimulus,presented,0
+4440,stdout,received,'(-210.0, -90.0)'
+4441,Stimulus,presented,0
+4441,stdout,received,'(-210.0, -30.0)'
+4441,Stimulus,presented,0
+4441,stdout,received,'(-210.0, 30.0)'
+4441,Stimulus,presented,0
+4441,stdout,received,'(-210.0, 90.0)'
+4442,Stimulus,presented,0
+4442,stdout,received,'(-210.0, 150.0)'
+4442,Stimulus,presented,0
+4442,stdout,received,'(-210.0, 210.0)'
+4442,Stimulus,presented,0
+4443,stdout,received,'(-210.0, 270.0)'
+4443,Stimulus,presented,0
+4443,stdout,received,'(-150.0, -270.0)'
+4443,Stimulus,presented,0
+4443,stdout,received,'(-150.0, -210.0)'
+4444,Stimulus,presented,0
+4444,stdout,received,'(-150.0, -150.0)'
+4444,Stimulus,presented,0
+4444,stdout,received,'(-150.0, -90.0)'
+4445,Stimulus,presented,0
+4445,stdout,received,'(-150.0, -30.0)'
+4445,Stimulus,presented,0
+4445,stdout,received,'(-150.0, 30.0)'
+4445,Stimulus,presented,0
+4445,stdout,received,'(-150.0, 90.0)'
+4446,Stimulus,presented,0
+4446,stdout,received,'(-150.0, 150.0)'
+4446,Stimulus,presented,0
+4446,stdout,received,'(-150.0, 210.0)'
+4446,Stimulus,presented,0
+4446,stdout,received,'(-150.0, 270.0)'
+4447,Stimulus,presented,0
+4447,stdout,received,'(-90.0, -270.0)'
+4447,Stimulus,presented,0
+4447,stdout,received,'(-90.0, -210.0)'
+4447,Stimulus,presented,0
+4447,stdout,received,'(-90.0, -150.0)'
+4448,Stimulus,presented,0
+4448,stdout,received,'(-90.0, -90.0)'
+4448,Stimulus,presented,0
+4448,stdout,received,'(-90.0, -30.0)'
+4448,Stimulus,presented,0
+4448,stdout,received,'(-90.0, 30.0)'
+4449,Stimulus,presented,0
+4449,stdout,received,'(-90.0, 90.0)'
+4449,Stimulus,presented,0
+4449,stdout,received,'(-90.0, 150.0)'
+4449,Stimulus,presented,0
+4449,stdout,received,'(-90.0, 210.0)'
+4450,Stimulus,presented,0
+4450,stdout,received,'(-90.0, 270.0)'
+4450,Stimulus,presented,0
+4450,stdout,received,'(-30.0, -270.0)'
+4450,Stimulus,presented,0
+4450,stdout,received,'(-30.0, -210.0)'
+4451,Stimulus,presented,0
+4451,stdout,received,'(-30.0, -150.0)'
+4451,Stimulus,presented,0
+4451,stdout,received,'(-30.0, -90.0)'
+4451,Stimulus,presented,0
+4451,stdout,received,'(-30.0, -30.0)'
+4452,Stimulus,presented,0
+4452,stdout,received,'(-30.0, 30.0)'
+4452,Stimulus,presented,0
+4452,stdout,received,'(-30.0, 90.0)'
+4452,Stimulus,presented,0
+4452,stdout,received,'(-30.0, 150.0)'
+4453,Stimulus,presented,0
+4453,stdout,received,'(-30.0, 210.0)'
+4453,Stimulus,presented,0
+4453,stdout,received,'(-30.0, 270.0)'
+4453,Stimulus,presented,0
+4453,stdout,received,'(30.0, -270.0)'
+4454,Stimulus,presented,0
+4454,stdout,received,'(30.0, -210.0)'
+4454,Stimulus,presented,0
+4454,stdout,received,'(30.0, -150.0)'
+4454,Stimulus,presented,0
+4454,stdout,received,'(30.0, -90.0)'
+4454,Stimulus,presented,0
+4454,stdout,received,'(30.0, -30.0)'
+4455,Stimulus,presented,0
+4455,stdout,received,'(30.0, 30.0)'
+4455,Stimulus,presented,0
+4455,stdout,received,'(30.0, 90.0)'
+4455,Stimulus,presented,0
+4455,stdout,received,'(30.0, 150.0)'
+4455,Stimulus,presented,0
+4455,stdout,received,'(30.0, 210.0)'
+4456,Stimulus,presented,0
+4456,stdout,received,'(30.0, 270.0)'
+4456,Stimulus,presented,0
+4456,stdout,received,'(90.0, -270.0)'
+4456,Stimulus,presented,0
+4456,stdout,received,'(90.0, -210.0)'
+4456,Stimulus,presented,0
+4456,stdout,received,'(90.0, -150.0)'
+4457,Stimulus,presented,0
+4457,stdout,received,'(90.0, -90.0)'
+4457,Stimulus,presented,0
+4457,stdout,received,'(90.0, -30.0)'
+4457,Stimulus,presented,0
+4457,stdout,received,'(90.0, 30.0)'
+4457,Stimulus,presented,0
+4457,stdout,received,'(90.0, 90.0)'
+4458,Stimulus,presented,0
+4458,stdout,received,'(90.0, 150.0)'
+4458,Stimulus,presented,0
+4458,stdout,received,'(90.0, 210.0)'
+4458,Stimulus,presented,0
+4458,stdout,received,'(90.0, 270.0)'
+4458,Stimulus,presented,0
+4458,stdout,received,'(150.0, -270.0)'
+4459,Stimulus,presented,0
+4459,stdout,received,'(150.0, -210.0)'
+4459,Stimulus,presented,0
+4459,stdout,received,'(150.0, -150.0)'
+4459,Stimulus,presented,0
+4459,stdout,received,'(150.0, -90.0)'
+4459,Stimulus,presented,0
+4459,stdout,received,'(150.0, -30.0)'
+4460,Stimulus,presented,0
+4460,stdout,received,'(150.0, 30.0)'
+4460,Stimulus,presented,0
+4460,stdout,received,'(150.0, 90.0)'
+4460,Stimulus,presented,0
+4460,stdout,received,'(150.0, 150.0)'
+4460,Stimulus,presented,0
+4460,stdout,received,'(150.0, 210.0)'
+4461,Stimulus,presented,0
+4461,stdout,received,'(150.0, 270.0)'
+4461,Stimulus,presented,0
+4461,stdout,received,'(210.0, -270.0)'
+4461,Stimulus,presented,0
+4461,stdout,received,'(210.0, -210.0)'
+4461,Stimulus,presented,0
+4461,stdout,received,'(210.0, -150.0)'
+4462,Stimulus,presented,0
+4462,stdout,received,'(210.0, -90.0)'
+4462,Stimulus,presented,0
+4462,stdout,received,'(210.0, -30.0)'
+4462,Stimulus,presented,0
+4462,stdout,received,'(210.0, 30.0)'
+4462,Stimulus,presented,0
+4462,stdout,received,'(210.0, 90.0)'
+4463,Stimulus,presented,0
+4463,stdout,received,'(210.0, 150.0)'
+4463,Stimulus,presented,0
+4463,stdout,received,'(210.0, 210.0)'
+4463,Stimulus,presented,0
+4463,stdout,received,'(210.0, 270.0)'
+4463,Stimulus,presented,0
+4463,stdout,received,'(270.0, -270.0)'
+4463,Stimulus,presented,0
+4463,stdout,received,'(270.0, -210.0)'
+4464,Stimulus,presented,0
+4464,stdout,received,'(270.0, -150.0)'
+4464,Stimulus,presented,0
+4464,stdout,received,'(270.0, -90.0)'
+4464,Stimulus,presented,0
+4464,stdout,received,'(270.0, -30.0)'
+4464,Stimulus,presented,0
+4464,stdout,received,'(270.0, 30.0)'
+4464,Stimulus,presented,0
+4464,stdout,received,'(270.0, 90.0)'
+4465,Stimulus,presented,0
+4465,stdout,received,'(270.0, 150.0)'
+4465,Stimulus,presented,0
+4465,stdout,received,'(270.0, 210.0)'
+4465,Stimulus,presented,0
+4465,stdout,received,'(270.0, 270.0)'
+4465,Stimulus,presented,0
+6871,Experiment,paused
+6885,Stimulus,presented,1
+8629,Keyboard,received,y,wait_char
+8629,Experiment,ended
+8635,Stimulus,presented,1
