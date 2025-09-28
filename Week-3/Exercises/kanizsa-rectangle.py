@@ -1,71 +1,116 @@
+"""
+Take your existing Kanizsa-square code 
+and modify it in a file called kanizsa-rectangle.py 
+so that it displays a rectangle instead of a square.
+
+The rectangle should have a given aspect ratio (width over height)
+Its size should be controlled by a scaling factor
+
+The inducing circles should also be scaled by their own scaling factor.
+Put all of this inside a function. The function should take three arguments:
+
+The aspect ratio of the rectangle.
+The scaling factor for the rectangle.
+The scaling factor for the circles.
+Hint: When initializing the exp object, 
+set the background_colour to C_GREY (import it from expyriment.misc.constants).
+
+Experiment with these parameters: 
+Does the perceived strength of the illusory contours change depending on them?
+"""
+
+
 from expyriment import control, stimuli, design
 
-# Define the experiment, set the background to grey
-exp = design.Experiment(background_colour = (128, 128, 128))
+def kanizsa(ratio_rectangle = (16, 9), scale_rectangle = 0.25, 
+            scale_circle = 0.05):
+    # Define the experiment, set the background to grey
+    exp = design.Experiment(background_colour = (128, 128, 128))
 
-# control.set_develop_mode(True)
+    # Developement mode
+    # control.set_develop_mode(True)
 
-control.initialise(exp)
+    control.initialise(exp)
 
-# Get the monitor's spec
-width, height = exp.screen.size
+    # Get the monitor's spec
+    width_screen, height_screen = exp.screen.size
 
-# Calculate the circle's radius
-circle_radius = round(0.05 * width, 0)
+    print("Screen_spec:", width_screen, "*", height_screen)
 
-square_size = (800, 600)
+    # Define the rectangle's scalling factor, by width
+    # scale_rectangle = 0.25
 
-# Create the square
-square = stimuli.Rectangle(
-    size = (square_length, square_length),
-    position = square_size,
-    colour = (128, 128, 128)
-)
+    # Define rectangle's aspect ratio
+    # ratio_rectangle = (16, 9)
 
-# Create the positions for circles, grouped by up/bottom
-pos_up = [
-    (- vertex_abs, vertex_abs),
-    (vertex_abs, vertex_abs)
-]
+    # Calculate the width and height of the rectangle
+    width_rectangle = width_screen * scale_rectangle
+    height_rectangle = width_rectangle * (ratio_rectangle[1] / ratio_rectangle[0] )
+    size_rectangle = (width_rectangle, height_rectangle)
 
-pos_bottom = [
-    (- vertex_abs, - vertex_abs),
-    (vertex_abs, - vertex_abs)
-]
+    print("Rectangle size: ", size_rectangle)
 
-# Define the circles
-circles = []
+    # Define the circle's scalling factor
+    # scale_circle = 0.05
 
-for p in pos_up:
-    i_circle = stimuli.Circle(
-        radius = circle_radius,
-        position = p,
-        colour = (255, 255, 255)    # Up colors are black
+    # Calculate the circle's radius, by multiplying the scalling ratio by monitor width
+    circle_radius = round(scale_circle * width_screen, 0)
+
+    # Create the rectangle
+    rectangle = stimuli.Rectangle(
+        size = size_rectangle,
+        position = (0, 0),
+        colour = (128, 128, 128)
     )
-    circles.append(i_circle)
 
-for p in pos_bottom:
-    i_circle = stimuli.Circle(
-        radius = circle_radius,
-        position = p,
-        colour = (0, 0, 0)    # Up colors are white
-    )
-    circles.append(i_circle)
+    # Create the positions for circles, grouped by up/bottom
+    circle_pos_up = [
+        (- width_rectangle / 2, height_rectangle / 2),
+        (width_rectangle / 2, height_rectangle / 2)
+    ]
 
-# Preparation of stimuli completed
+    circle_pos_bottom = [
+        (- width_rectangle / 2, - height_rectangle / 2),
+        (width_rectangle / 2, - height_rectangle / 2)
+    ]
 
-control.start(exp)
+    print(circle_pos_up, circle_pos_bottom)
 
-# Clear the screen
-exp.screen.clear()
+    # Define the circles
+    circles = []
 
-# Present the circles
-for i in circles:
-    i.present(update = False, clear = False)
+    for p in circle_pos_up:
+        i_circle = stimuli.Circle(
+            radius = circle_radius,
+            position = p,
+            colour = (255, 255, 255)    # Up colors are black
+        )
+        circles.append(i_circle)
 
-# Present the square
-square.present(update = True, clear = False)
+    for p in circle_pos_bottom:
+        i_circle = stimuli.Circle(
+            radius = circle_radius,
+            position = p,
+            colour = (0, 0, 0)    # Up colors are white
+        )
+        circles.append(i_circle)
 
-exp.keyboard.wait()
+    # Preparation of stimuli completed
 
-control.end(exp)
+    control.start(exp)
+
+    # Clear the screen
+    exp.screen.clear()
+
+    # Present the circles
+    for i in circles:
+        i.present(update = False, clear = False)
+
+    # Present the square
+    rectangle.present(update = True, clear = False)
+
+    exp.keyboard.wait()
+
+    control.end(exp)
+
+kanizsa()

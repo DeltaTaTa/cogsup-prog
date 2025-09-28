@@ -1,0 +1,25 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Sep 28 2025 15:48:30
+#sha1: 6be204
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+533,stdout,received,'[(-400.0, 144.0), (400.0, 144.0)] [(-400.0, -144.0), (400.0, -144.0)]'
+5797,design,log,
+#design: #exp: kanizsa-rectangle
+#design: block_cnt,block_id,trial_cnt,trial_id
+5797,design,logged,
+5797,Experiment,started
+5798,Stimulus,presented,1
+5798,Stimulus,presented,2
+5798,Stimulus,presented,3
+5798,Stimulus,presented,4
+5815,Stimulus,presented,0
+52981,Keyboard,received,32,wait
+52981,Experiment,ended
+53021,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x1070ced40>'
+53021,stderr,received,'Traceback (most recent call last):'
+53021,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/.venv/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+53021,stderr,received,'    if self._compression_filename is not None:'
+53021,stderr,received,"AttributeError: 'TextLine' object has no attribute '_compression_filename'"

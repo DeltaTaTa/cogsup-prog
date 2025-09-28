@@ -1,0 +1,27 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Sun Sep 28 2025 15:51:26
+#sha1: f6f82c
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+535,stdout,received,'Screen_spec: 800 * 600'
+535,stdout,received,'Rectangle size:  (400.0, 0.0)'
+535,stdout,received,'[(-400.0, 0.0), (400.0, 0.0)] [(-400.0, -0.0), (400.0, -0.0)]'
+2350,design,log,
+#design: #exp: kanizsa-rectangle
+#design: block_cnt,block_id,trial_cnt,trial_id
+2350,design,logged,
+2350,Experiment,started
+2350,Stimulus,presented,1
+2351,Stimulus,presented,2
+2351,Stimulus,presented,3
+2351,Stimulus,presented,4
+2449,Stimulus,presented,0
+3273,Keyboard,received,32,wait
+3273,Experiment,ended
+3294,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x1087ced40>'
+3294,stderr,received,'Traceback (most recent call last):'
+3294,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-3/.venv/lib/python3.13/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+3295,stderr,received,'    if self._compression_filename is not None:'
+3295,stderr,received,"AttributeError: 'TextLine' object has no attribute '_compression_filename'"
