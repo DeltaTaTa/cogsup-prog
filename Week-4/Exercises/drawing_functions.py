@@ -2,14 +2,36 @@ from expyriment import design, control, stimuli
 import random
 
 def load(stims):
-    pass
+    for stim in stims:
+        stim.preload()
 
 def timed_draw(stims):
-    pass
+    t0 = exp.clock.time
+
+    exp.screen.clear()
+    for stim in stims:
+        stim.present(clear = False, update = False)
+
+    exp.screen.update()
+
+    return exp.clock.time - t0
     # return the time it took to draw
 
+# Draw and keep stimuli on-screen for time t in ms (be mindful of edge cases!)
 def present_for(stims, t=1000):
-    pass
+    # Clear the screen
+    exp.screen.clear()
+
+    for stim in stims:
+        stim.present(clear = False, update = False) #Draw stimuli in the buffer
+
+    t0 = exp.control.clock
+    # Update the screen
+    exp.screen.update()
+    dt = exp.clock.time - t0
+    exp.clock.wait(1000 - dt)
+
+
 
 
 """ Test functions """
