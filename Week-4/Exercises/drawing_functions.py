@@ -25,7 +25,7 @@ def present_for(stims, t=1000):
     for stim in stims:
         stim.present(clear = False, update = False) #Draw stimuli in the buffer
 
-    t0 = exp.control.clock
+    t0 = exp.clock.time
     # Update the screen
     exp.screen.update()
     dt = exp.clock.time - t0
