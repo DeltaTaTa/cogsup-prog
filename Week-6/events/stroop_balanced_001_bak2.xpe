@@ -1,0 +1,19 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Oct 20 2025 00:41:43
+#sha1: 90d213
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+4015,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+4015,design,logged,
+4015,Experiment,started
+4034,Stimulus,presented,19
+4611,Keyboard,received,102,wait
+4612,stderr,received,'Traceback (most recent call last):'
+4612,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 135, in <module>\n    trials = generate_subject_trials(subject_id)'
+4612,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 99, in generate_subject_trials\n    perm = PERMS[(subject_id - 1) % len(PERMS)]\n                                    ~~~^^^^^^^'
+4612,stderr,received,"TypeError: object of type 'NoneType' has no len()"

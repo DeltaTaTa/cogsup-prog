@@ -1,0 +1,18 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpe-file, coding: UTF-8
+#date: Mon Oct 20 2025 00:40:58
+#sha1: e5d9df
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='Zhekuns-MacBook-Air.local', release='24.6.0', version='Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+2055,design,log,
+#design: #exp: Stroop
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+2055,design,logged,
+2055,Experiment,started
+2067,Stimulus,presented,19
+3669,Keyboard,received,106,wait
+3669,stderr,received,'Traceback (most recent call last):'
+3669,stderr,received,'  File "/Users/zhekun/Documents/cogsup/Programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 138, in <module>\n    block_trials = [t for t in trials if t["block_id"] == b_id]\n                               ^^^^^^'
+3669,stderr,received,"NameError: name 'trials' is not defined"

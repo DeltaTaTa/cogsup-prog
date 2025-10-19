@@ -86,8 +86,8 @@ def derangements(lst):
     ders = []
     for perm in itertools.permutations(lst):
         if all(original != perm[idx] for idx, original in enumerate(lst)):
-            ders.append(lst)
-    return 
+            ders.append(perm)
+    return ders
 # COLORS = ["red", "blue", "green", "orange"]
 PERMS = derangements(COLORS)
 # rint(PERMS)
@@ -131,6 +131,8 @@ subject_id = 1
 control.start(subject_id=subject_id)
 
 present_instructions(INSTR_START)
+
+trials = generate_subject_trials(subject_id)
 
 # iterate blocks and trials; show mid-instruction after half of blocks
 for b_id in range(1, N_BLOCKS + 1):
