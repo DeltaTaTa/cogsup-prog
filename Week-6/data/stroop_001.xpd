@@ -1,0 +1,19 @@
+#Expyriment 1.0.0 (Python 3.13.7), .xpd-file, coding: UTF-8
+#date: Sun Oct 19 2025 20:52:29
+#--EXPERIMENT INFO
+#e mainfile: stroop.py
+#e sha1: 7e8c0e
+#e modules: 
+#e Experiment: Stroop
+#e no between subject factors
+#--SUBJECT INFO
+#s id: 1
+subject_id,block_cnt,trial_cnt,trial_type,word,color,RT,correct
+1,1,1,mismatch,orange,blue,770,True
+1,1,2,mismatch,green,blue,1378,True
+1,1,3,mismatch,green,blue,631,True
+1,1,4,mismatch,red,blue,721,True
+1,1,5,match,orange,orange,1011,False
+1,1,6,mismatch,blue,red,937,True
+1,1,7,mismatch,green,orange,643,True
+1,1,8,match,green,green,984,False
